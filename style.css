@@ -1,0 +1,156 @@
+html {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Changed from center to flex-start for proper spacing */
+  min-height: 100vh;
+  /* Ensure it takes up the full height */
+  color: #fff;
+  margin: 0;
+  /* Ensure no margin on body */
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  /* Change to auto for proper aspect ratio */
+  margin: 0;
+  /* Adjusted margin */
+  padding-bottom: 10px;
+  background-size: cover;
+  /* Cover the entire viewport */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent repetition */
+}
+
+.container {
+    font-family: "Mirza", serif;
+    font-weight: 500;
+    font-style: normal;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  /* Set width to 100% for responsiveness */
+  max-width: 600px;
+  /* Limit max width for larger screens */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="name"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+button {
+  background-color: #51acc7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Add transition for smooth effect */
+}
+
+button:hover {
+  background-color: #5ec8e7;
+  /* Change background color on hover */
+  transform: scale(1.05);
+  /* Slightly increase size on hover */
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  z-index: 10;
+}
+
+.nav-icon {
+  float: right;
+  margin-right: 20px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+footer {
+  background-color: #205C72;
+  color: white;
+  /* Text color */
+  padding: 20px 0;
+  /* Padding for top and bottom */
+  text-align: center;
+  /* Center the text */
+  width: 100%;
+  /* Ensure footer takes full width */
+  position: relative;
+  /* Ensure footer is positioned properly */
+}
+
+.footer-content {
+  max-width: 1200px;
+  /* Max width for content */
+  margin: 0 auto;
+  /* Center the content */
+  padding: 0 20px;
+  /* Padding for left and right */
+}
+
+.social-icons {
+  margin-bottom: 10px;
+  /* Space below icons */
+}
+
+.social-icons a {
+  color: white;
+  /* Icon color */
+  margin: 0 10px;
+  /* Space between icons */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 24px;
+  /* Icon size */
+}
+
+.social-icons a:hover {
+  color: #ddd;
+  /* Change color on hover */
+}
